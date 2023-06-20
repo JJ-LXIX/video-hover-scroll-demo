@@ -11,6 +11,8 @@ import {
 import { useRef } from "react";
 
 export default function Home() {
+  const containerRef = useRef(null);
+
   return (
     <main className="bg-black">
           >
