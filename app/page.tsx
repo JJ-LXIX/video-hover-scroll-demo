@@ -28,17 +28,17 @@ export default function Home() {
   });
   return (
     <main className="bg-black">
+      <div className="h-[100vh] mb-1 flex justify-center items-center relative">
+        <div className="flex justify-center items-center h-screen w-full">
+          <motion.h1
+            className="text-9xl text-white text-center tracking-tighter"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
+            viewport={{ once: true }}
+            style={{ y, opacity: opacityH1 }}
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            Video Scroll and Hover Demo
+          </motion.h1>
         </div>
       </div>
 
