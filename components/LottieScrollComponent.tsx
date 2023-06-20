@@ -15,7 +15,7 @@ function LottieComponent({ scrollYProgress }: Props) {
     }
   }, []);
 
-  const frames = useTransform(scrollYProgress, [0, 1], [0, 110], {
+  const frames: any = useTransform(scrollYProgress, [0, 1], [0, 110], {
     clamp: false,
   });
 
