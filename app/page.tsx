@@ -13,6 +13,19 @@ import { useRef } from "react";
 export default function Home() {
   const containerRef = useRef(null);
 
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+  });
+
+  const { scrollYProgress: scrollYProgress2 } = useScroll();
+  let y = useTransform(scrollYProgress2, [0, 0.13], ["0%", "200%"]);
+  let y2 = useTransform(scrollYProgress2, [0, 0.13], ["0%", "-1000%"]);
+
+  let opacityH1 = useTransform(scrollYProgress2, [0.07, 0.11], [1, 0]);
+
+  useMotionValueEvent(scrollYProgress2, "change", (latest) => {
+    console.log("scrollYProgress", latest);
+  });
   return (
     <main className="bg-black">
           >
