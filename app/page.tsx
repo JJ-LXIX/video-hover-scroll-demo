@@ -69,7 +69,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
-              transition: { duration: 0.3, delay: 0.1 },
+              transition: { duration: 0.3, delay: 1 },
             }}
             style={{ y: y2 }}
             viewport={{ once: true }}
@@ -80,7 +80,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
-              transition: { duration: 0.3, delay: 0.12 },
+              transition: { duration: 0.3, delay: 1.2 },
             }}
             style={{ y: y2 }}
             viewport={{ once: true }}
