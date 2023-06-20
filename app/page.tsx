@@ -11,6 +11,7 @@ import {
 import { useRef } from "react";
 
 export default function Home() {
+<<<<<<< HEAD
   const containerRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -26,6 +27,8 @@ export default function Home() {
   useMotionValueEvent(scrollYProgress2, "change", (latest) => {
     console.log("scrollYProgress", latest);
   });
+=======
+>>>>>>> 2f18aedd851f90eef5500e4c66441139f80c0677
 
   return (
     <main className="bg-black">
