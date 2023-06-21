@@ -3,7 +3,6 @@ import LottieCursorComponent from "@/components/LottieCursorComponent";
 import LottieScrollComponent from "@/components/LottieScrollComponent";
 import {
   useScroll,
-  AnimatePresence,
   useTransform,
   motion,
   useMotionValueEvent,
@@ -92,9 +91,7 @@ export default function Home() {
 
       {/* Lottie Scroll based */}
       <div className="h-[500vh]" ref={containerRef}>
-        <AnimatePresence>
-          <LottieScrollComponent scrollYProgress={scrollYProgress} />
-        </AnimatePresence>
+        <LottieScrollComponent scrollYProgress={scrollYProgress} />
       </div>
 
       <div className="h-[20vh] flex justify-center items-center w-full">
