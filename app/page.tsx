@@ -97,7 +97,11 @@ export default function Home() {
         </AnimatePresence>
       </div>
 
-      <div className="h-[10vh]"></div>
+      <div className="h-[20vh] flex justify-center items-center w-full">
+        <h2 className="text-white text-4xl decoration-white underline underline-offset-4">
+          Hover Over the Image Below!
+        </h2>
+      </div>
       {/* Lottie cursor based  */}
       <LottieCursorComponent />
 
